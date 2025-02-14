@@ -75,7 +75,7 @@ body {
 }
 
 .gip2 {
-  transform: translate(270px, -500px);
+  transform: translate(270px, -100px);
 }
 
 .gip3 {
@@ -103,7 +103,7 @@ video {
 }
 
 .rect {
-  width: 500px;
+  width: 450px;
   font-family: Helvetica, Arial, sans-serif; 
   font-size: 16px; 
   position: relative;
