@@ -130,11 +130,12 @@ video {
 
   svg.rect {
     width: 100%; 
-    height: 1035px;
+    height: 1050px;
   }
 
   svg.rect text {
     font-size: 12px;
+    height: 990;
   }
 
   svg.rect tspan {
