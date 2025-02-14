@@ -5,7 +5,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif; 
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .container {
@@ -14,8 +14,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 15px;
-  width: 100%; 
+  padding: 20px;
+  width: 100%;
 }
 
 .Title {
@@ -35,9 +35,9 @@ body {
 }
 
 .hi, .hello, .Wii {
-  font-size: 15px;
+  font-size: 20px;
   color: gray;
-  margin: 5px;
+  margin: 10px;
 }
 
 .fun {
@@ -54,12 +54,12 @@ body {
 }
 
 .text {
-  margin-top: 250px;
-  margin-bottom: 200px;
+  margin-top: 50px; /* Adjusted for mobile */
+  margin-bottom: 50px; /* Adjusted for mobile */
 }
 
 .text1 {
-  margin-top: 250px;
+  margin-top: 50px; /* Adjusted for mobile */
   position: relative;
   transform: translate(0, -10px);
 }
@@ -67,32 +67,21 @@ body {
 .gip, .gip2, .gip3 {
   height: 120px;
   width: 120px;
-  position: relative;
-}
-
-.gip {
-  transform: translate(250px);
-}
-
-.gip2 {
-  transform: translate(270px, -100px);
-}
-
-.gip3 {
-  transform: translate(250px, -160px);
+  margin: 10px; /* Added margin for spacing */
 }
 
 .media-container {
   background-color: rgba(214, 205, 205, 0.277);
   border-radius: 30px;
-  width: 310px;
+  width: 90%; /* Adjusted for mobile */
+  max-width: 310px; /* Limit width on larger screens */
   height: 520px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px auto;
   overflow: hidden;
-  margin-bottom: 200px;
+  margin-bottom: 50px; /* Adjusted for mobile */
 }
 
 video {
@@ -103,11 +92,49 @@ video {
 }
 
 .rect {
-  width: 450px;
-  font-family: Helvetica, Arial, sans-serif; 
-  font-size: 16px; 
+  width: 100%; /* Adjusted for mobile */
+  max-width: 500px; /* Limit width on larger screens */
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
   position: relative;
-  transform: translate(100px);
   padding: 20px;
-  
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .Title {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+  }
+
+  .text, .text1 {
+    font-size: 24px; /* Smaller font size for mobile */
+  }
+
+  .gip, .gip2, .gip3 {
+    height: 80px; /* Smaller images for mobile */
+    width: 80px;
+  }
+
+  .media-container {
+    height: 400px; /* Adjusted height for mobile */
+  }
+
+  .rect {
+    width: 100%; /* Full width on mobile */
+    padding: 10px; /* Smaller padding for mobile */
+  }
+
+  svg.rect {
+    width: 100%; /* Ensure SVG fits the screen */
+    height: auto; /* Allow height to adjust */
+  }
+
+  svg.rect text {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+
+  svg.rect tspan {
+    x: 10 !important; /* Adjust text positioning for mobile */
+  }
 }
