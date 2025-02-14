@@ -65,9 +65,9 @@ body {
 }
 
 .gip, .gip2, .gip3 {
-  height: 300px;
-  width: 300px;
-  margin: 100px;
+  height: 200px;
+  width: 200px;
+  margin: 30px;
   margin-left: 200px;
 }
 
@@ -100,7 +100,6 @@ video {
   font-size: 16px;
   position: relative;
   padding: 20px;
-  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
@@ -123,12 +122,12 @@ video {
 
   .rect {
     width: 100%;
-    padding: 10px;
+    padding: 0px;
   }
 
   svg.rect {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   svg.rect text {
