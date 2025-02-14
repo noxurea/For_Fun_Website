@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 15px;
   width: 100%; 
 }
 
@@ -35,9 +35,9 @@ body {
 }
 
 .hi, .hello, .Wii {
-  font-size: 20px;
+  font-size: 15px;
   color: gray;
-  margin: 10px;
+  margin: 5px;
 }
 
 .fun {
@@ -107,7 +107,6 @@ video {
   font-family: Helvetica, Arial, sans-serif; 
   font-size: 16px; 
   position: relative;
-  transform: translate(-50px, 0);
   padding: 20px;
   
 }
