@@ -54,7 +54,7 @@ body {
 }
 
 .text {
-  margin-top: 50px;
+  margin-top: 300px;
   margin-bottom: 50px;
 }
 
@@ -65,10 +65,10 @@ body {
 }
 
 .gip, .gip2, .gip3 {
-  height: 220px;
-  width: 220px;
+  height: 300px;
+  width: 300px;
   margin: 100px;
-  margin-left: 100px;
+  margin-left: 200px;
 }
 
 .media-container {
@@ -95,7 +95,7 @@ video {
 .rect {
   width: 100%;
   max-width: 500px;
-  height: 1350px;
+  height: 1400px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   position: relative;
