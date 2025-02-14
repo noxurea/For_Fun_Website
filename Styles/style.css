@@ -54,12 +54,12 @@ body {
 }
 
 .text {
-  margin-top: 50px; /* Adjusted for mobile */
-  margin-bottom: 50px; /* Adjusted for mobile */
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .text1 {
-  margin-top: 50px; /* Adjusted for mobile */
+  margin-top: 50px;
   position: relative;
   transform: translate(0, -10px);
 }
@@ -67,21 +67,22 @@ body {
 .gip, .gip2, .gip3 {
   height: 120px;
   width: 120px;
-  margin: 10px; /* Added margin for spacing */
+  margin: 100px;
+  margin-left: 100px;
 }
 
 .media-container {
   background-color: rgba(214, 205, 205, 0.277);
   border-radius: 30px;
-  width: 90%; /* Adjusted for mobile */
-  max-width: 310px; /* Limit width on larger screens */
+  width: 90%;
+  max-width: 310px;
   height: 520px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px auto;
   overflow: hidden;
-  margin-bottom: 50px; /* Adjusted for mobile */
+  margin-bottom: 50px;
 }
 
 video {
@@ -92,49 +93,48 @@ video {
 }
 
 .rect {
-  width: 100%; /* Adjusted for mobile */
-  max-width: 500px; /* Limit width on larger screens */
+  width: 100%;
+  max-width: 500px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   position: relative;
   padding: 20px;
-  box-sizing: border-box; /* Ensure padding is included in width */
+  box-sizing: border-box;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .Title {
-    font-size: 2.5rem; /* Smaller font size for mobile */
+    font-size: 2.5rem;
   }
 
   .text, .text1 {
-    font-size: 24px; /* Smaller font size for mobile */
+    font-size: 24px;
   }
 
   .gip, .gip2, .gip3 {
-    height: 80px; /* Smaller images for mobile */
+    height: 80px;
     width: 80px;
   }
 
   .media-container {
-    height: 400px; /* Adjusted height for mobile */
+    height: 400px;
   }
 
   .rect {
-    width: 100%; /* Full width on mobile */
-    padding: 10px; /* Smaller padding for mobile */
+    width: 100%;
+    padding: 10px;
   }
 
   svg.rect {
-    width: 100%; /* Ensure SVG fits the screen */
-    height: auto; /* Allow height to adjust */
+    width: 100%;
+    height: auto;
   }
 
   svg.rect text {
-    font-size: 12px; /* Smaller font size for mobile */
+    font-size: 12px;
   }
 
   svg.rect tspan {
-    x: 10 !important; /* Adjust text positioning for mobile */
+    x: 10 !important;
   }
 }
