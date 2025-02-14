@@ -4,17 +4,18 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0; 
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif; 
 }
 
 .container {
-  font-family: Helvetica;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; 
-  padding: 20px; 
+  justify-content: flex-start;
+  padding: 20px;
+  width: 100%; 
 }
 
 .Title {
@@ -22,7 +23,7 @@ body {
   text-align: center;
   margin: 20px 0;
   padding: 10px;
-  z-index: 10; 
+  z-index: 10;
 }
 
 .text-group {
@@ -46,41 +47,38 @@ body {
   margin: 30px 0;
 }
 
-.text {
+.text, .text1 {
   font-size: 30px;
   text-align: center;
   margin: 20px 0;
+}
+
+.text {
   margin-top: 250px;
   margin-bottom: 200px;
 }
 
 .text1 {
-  font-size: 30px;
-  text-align: center;
-  margin: 20px 0;
   margin-top: 250px;
   position: relative;
-  transform: translate(0,-10px);
+  transform: translate(0, -10px);
 }
 
-.gip{
+.gip, .gip2, .gip3 {
   height: 120px;
   width: 120px;
   position: relative;
+}
+
+.gip {
   transform: translate(250px);
 }
 
-.gip2{
-  height: 120px;
-  width: 120px;
-  position: relative;
+.gip2 {
   transform: translate(270px, -800px);
 }
 
-.gip3{
-  height: 120px;
-  width: 120px;
-  position: relative;
+.gip3 {
   transform: translate(250px, -160px);
 }
 
@@ -104,11 +102,12 @@ video {
   border-radius: 30px;
 }
 
-.rect{
-  background-color: blue;
+.rect {
   width: 500px;
-  font-family: Helvetica;
-  font-size: 500px;
+  font-family: Helvetica, Arial, sans-serif; 
+  font-size: 16px; 
   position: relative;
-  transform: translate(-50px, 0px);
+  transform: translate(-50px, 0);
+  padding: 20px;
+  
 }
