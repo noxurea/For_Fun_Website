@@ -1,74 +1,137 @@
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
+body{
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-.container {
-  min-height: 100vh;
+.FIXX {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+}
+
+.FIXX a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.FIXX a:hover {
+  color: gray;
+}
+
+.Top, .Middle, .Music {
+  scroll-margin-top: 80px; 
+}
+
+.Top {
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 20px;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
   width: 100%;
 }
 
-.Title {
-  font-size: 3.5rem;
-  text-align: center;
-  margin: 20px 0;
-  padding: 10px;
-  z-index: 10;
+.h3 {
+  margin-top: 200px;
+  min-height: 10vh;
 }
 
-.text-group {
+.jip {
+  top: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  max-width: 400px;
+  width: 60vw;
+  max-width: 600px;
+  margin-top: 200px; 
+  border: 10px solid rgb(171, 168, 168);
+  padding: 10px;
 }
 
-.hi, .hello, .Wii {
-  font-size: 18spx;
-  color: gray;
-  margin: 10px;
+.gip {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
 }
 
-.fun {
-  font-size: 30px;
-  color: rgba(128, 128, 128, 0.396);
-  text-align: center;
-  margin: 30px 0;
+.jipp {
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  padding: 40px;
 }
 
-.text, .text1 {
-  font-size: 30px;
-  text-align: center;
-  margin: 20px 0;
+.gipp {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
 }
 
-.text {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.text1 {
-  margin-top: 50px; 
+.Middle {
   position: relative;
-  transform: translate(0, -10px);
+  text-align: center;
+  width: 100%;
+  margin-top: 500px; 
 }
 
-.gip, .gip2, .gip3 {
-  height: 120px;
-  width: 120px;
-  margin: 30px; 
-  margin-top: 100px;
+.jip2 {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  width: 60vw;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid rgb(171, 168, 168);
+  transform: translateX(-50%);
+  padding: 10px;
+}
+
+.gip2 {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+.Music {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: 500px; 
+}
+
+.jip3 {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  width: 60vw;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid rgb(171, 168, 168);
+  transform: translateX(-50%);
+  padding: 10px;
+}
+
+.gip3 {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
 }
 
 .media-container {
@@ -92,82 +155,13 @@ video {
   border-radius: 30px;
 }
 
-.rect {
-  width: 370px; 
-  max-width: 370px;
-  font-family: Helvetica, Arial, sans-serif;
-  height: 1030;
-  font-size: 16px;
-  position: relative;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-  .Title {
-    font-size: 2.5rem; 
+@media (max-width: 1080px) {
+  .jip, .jip2 {
+    width: 50vw;
+    max-width: 100%;
   }
 
-  .fun {
-    font-size: 20px;
-    color: rgba(128, 128, 128, 0.396);
-    text-align: center;
-    margin: 30px 0;
-    margin-top: 150px;
-  }
-
-  .text{
-    font-size: 18px;
-    margin: 10px; 
-    margin-top: 350px;
-  }
-
-  .text1{
-    font-size: 18px;
-    margin: 10px;
-    margin-bottom: -75px;
-  }
-
-  .gip{
-    height: 150px; 
-    width: 150px;
-    align-items: center;
-  }
-
-  .gip2{
-    height: 150px; 
-    width: 150px;
-    align-items: center;
-  }
-
-  .gip3{
-    height: 150px; 
-    width: 150px;
-    align-items: center;
-    margin-top: 0;
-  }
-
-  .media-container {
-    height: 600px;
-  }
-
-  .rect {
-    width: 370px; 
-    padding: 10px;
-    height: 1050px; 
-  }
-
-  svg.rect {
-    width: 370px; 
-    height: 1050px;
-  }
-
-  svg.rect text {
-    font-size: 12px;
-    height: 990;
-  }
-
-  svg.rect tspan {
-    x: 10 !important; 
+  .gip, .gip2 {
+    width: 100%;
   }
 }
