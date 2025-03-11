@@ -17,8 +17,8 @@ body{
 .FIXX a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
-  padding: 10px;
+  font-size: 80px;
+  padding: 20px;
 }
 
 .FIXX a:hover {
@@ -30,7 +30,7 @@ body{
 }
 
 .Top {
-  margin-top: 10%;
+  margin-top: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,8 +89,8 @@ body{
   position: relative;
   top: 50px;
   left: 50%;
-  width: 60vw;
-  max-width: 600px;
+  width: 10vw;
+  max-width: 400px;
   height: auto;
   display: flex;
   align-items: center;
@@ -102,36 +102,61 @@ body{
 
 .gip2 {
   width: 100%;
-  max-width: 1000px;
+  max-width: 400px;
   height: auto;
 }
+
+.jip3 {
+  position: relative;
+  top: 60px;
+  left: 50%;
+  width: 60vw;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid rgb(171, 168, 168);
+  transform: translate(-50%, 200px);
+  padding: 10px;
+}
+
+.gip3 {
+  width: 100%;
+  max-width: 400px;
+  top: 90px;
+  height: auto;
+}
+
+.ji {
+  position: relative;
+  left: 50%;
+  width: 60vw;
+  max-width: 400px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid rgb(171, 168, 168);
+  transform: translateX(-50%); /* Only center horizontally */
+  padding: 10px;
+  margin-top: 500px; /* Adds more top space */
+}
+
+.gi {
+  position: relative; /* Needed for top to work */
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 110px; /* Adds top space */
+}
+
 
 .Music {
   position: relative;
   text-align: center;
   width: 100%;
   margin-top: 500px; 
-}
-
-.jip3 {
-  position: relative;
-  top: 50px;
-  left: 50%;
-  width: 60vw;
-  max-width: 600px;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 10px solid rgb(171, 168, 168);
-  transform: translateX(-50%);
-  padding: 10px;
-}
-
-.gip3 {
-  width: 100%;
-  max-width: 1000px;
-  height: auto;
 }
 
 .media-container {
